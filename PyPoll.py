@@ -5,6 +5,11 @@
 # 4. The % of votes that each candidate won
 # 5. The winner of the election based on popular vote.
 
+# Additional data requested
+# 6. Voter Turnout for each county.
+# 7. The percentage of votes from each county out of the total count.
+# 8. The county with the highest turnout.
+
 # Add dependencies
 import csv
 import os
@@ -90,6 +95,13 @@ with open(file_to_save, "w") as txt_file:
             winning_percentage = vote_percentage
             # Set the winning candidate equal to the candidate's name
             winning_candidate = candidate_name
+
+# Additional data requested
+# 6. Voter Turnout for each county.
+# 7. The percentage of votes from each county out of the total count.
+# 8. The county with the highest turnout.
+
+
 
     # Print out the Winning Candidate, vote count, and % vote to the terminal
     winning_candidate_summary = (
